@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+* {
+	box-sizing: border-box;
+}
+.row::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+/*-----HEADER--NAV-------------------------------------------*/
+header {
+	background-color: #313234;
+	width: 100%;
+	min-height: 50px;
+}
+header>nav>ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	float: right;	
+}
+header>nav>ul>li>a {
+	line-height: 50px;
+	padding: 0 20px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+header>nav>ul>li>a {
+	display: block;
+}
+header>nav>ul>li>a:hover {
+	color: #00D2EF;
+}
+header>nav>ul>li {
+	display: inline-block;
+}
+/*-----HEADER--LOGO-------------------------------------------*/
+header>nav>img {
+	padding: 10px 0;
+	margin-left: 10px;
+}
+/*-----HERO--SECTION-------------------------------------*/
+.hero {
+	width: 100%;
+	height: calc(100vh - 50px);
+	max-height: 470px;
+	background-image: url(https://images.unsplash.com/photo-1467664631004-58beab1ece0d?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	box-shadow: 2px 2px 20px #313234;
+}
+.slogan>h2 {
+	margin-top: 180px;
+	padding: 25px 160px 25px 25px; 
+	background-color: rgba(30, 30, 30, 0.5);
+	float: right;
+	max-width: 800px;
+	line-height: 32px;
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: 32px;
+	font-weight: 700;
+}
+.slogan>h2>span {
+	opacity: 0.9;
+	font-weight: 300;
+	font-size: 28px;
+	letter-spacing: 1px;
+}
+/*-----PROS--ICON--SECTION------------------*/
+.pros {
+	padding-top: 60px;
+}
+.pros .fa {
+	font-size: 80px;
+	color: #313332;
+	text-align: center;
+}
+.pros .fa:hover   {
+	color: #00D2EF;
+	cursor: pointer;
+	opacity: 0.8;
+}
+.pros p {
+	padding: 10px;
+}
+.pros  span {
+	text-transform: uppercase;
+	font-weight: 700;
+	text-shadow: 0 1px 0 #313234;
+	letter-spacing: 2px;
+	position: relative;
+	bottom: 5px;
+	font-size: 18px;
+	display: block;
+	margin-top: 10px;
+}
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+	text-align: center;
+}
+.featured-works>h2 {
+	padding-top: 40px;
+	font-size: 32px;
+	text-shadow: 1px 1px 5px #313234;
+	letter-spacing: 2px;
+}
+/*-------GALLERY---------------------------------*/
+.gallery {
+	margin-top: 40px;
+	box-shadow: 2px 2px 20px #313234;
+}
+.gallery [class^="pic"] {
+	float: left;
+	background-size: cover;
+	height: 180px;
+	position: relative;	
+}
+.gallery .pic1 {
+	background-image: url('https://images.unsplash.com/photo-1443110189928-4448af4a2bc5?dpr=1&auto=compress,format&fit=crop&w=1199&h=1004&q=80&cs=tinysrgb&crop=');
+}
+.gallery .pic2 {
+	background-image: url('https://images.unsplash.com/photo-1471038688616-61af8a9255b0?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=');
+}
+.gallery .pic3 {
+	background-image: url('https://images.unsplash.com/photo-1479243669563-7633e07b6520?dpr=1&auto=compress,format&fit=crop&w=1199&h=781&q=80&cs=tinysrgb&crop=');
+}
+.gallery .pic4 {
+	background-image: url('https://images.unsplash.com/photo-1496938966681-6df46e685acd?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=');
+}
+.gallery .pic5 {
+	background-image: url('https://images.unsplash.com/photo-1497215842964-222b430dc094?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=');
+}
+.gallery .pic6 {
+	background-image: url('https://images.unsplash.com/photo-1495791115425-92a29f1e8c8e?dpr=1&auto=compress,format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=');
+}
+.gallery .pic7 {
+	background-image: url('https://images.unsplash.com/photo-1483223424092-293e6e0b06b9?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=');
+}
+.gallery .pic8 {
+	background-image: url('https://images.unsplash.com/photo-1417632993443-302f4897cf67?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=');
+}
+.gallery .pic9 {
+	background-image: url('https://images.unsplash.com/photo-1496430598224-bfe65f200517?dpr=1&auto=compress,format&fit=crop&w=1199&h=797&q=80&cs=tinysrgb&crop=');
+}
+.gallery .pic10 {
+	background-image: url('https://images.unsplash.com/photo-1444653389962-8149286c578a?dpr=1&auto=compress,format&fit=crop&w=1199&h=805&q=80&cs=tinysrgb&crop=');
+}
+.gallery .layer {
+	background-color: rgba(0, 0, 0, .5);
+	margin: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .25s;
+	color: #fff;
+    margin-right: -50%;
+}
+.gallery .layer:hover {
+  	opacity: 1;
+}
+.circle-icon {
+	color:white;
+	background: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+}
+.layer div {
+	position: absolute;
+  	top: 50%;
+ 	left: 50%;
+	transform: translate(-50%, -50%);
+  	margin: 0;
+ 	margin-right: -50%;
+}
+.gallery .layer  .fa.fa-camera-retro:hover, .gallery .layer .fa.fa-search:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+/*--------TEAM-------------------------------------*/
+.team div {
+	background-size: cover;
+	border-radius: 50%;
+}
+.member1 {
+	background-image: url("http://devbasu.com/wp-content/uploads/2015/04/describe-your-ideal-boss.jpg");	
+}
+.member2 {
+	background-image: url("https://pbs.twimg.com/profile_images/765144858/michael-jordan_400x400.jpg");
+}
+.member3 {
+	background-image: url("http://assets.nydailynews.com/polopoly_fs/1.2144504.1426020212!/img/httpImage/image.jpg_gen/derivatives/article_750/norris.jpg");
+}
+.member4 {
+	background-image: url("http://www.best-job-interview.com/images/Fotolia_59012550_XS.jpg");
+}
+.team {
+	margin-top: 120px;
+}
+.team-padding {	
+	padding: 0 10px;
+}
+.team .team-layer {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    opacity: 0;
+    box-shadow: 2px 2px 20px #313234;
+}
+.team .team-layer:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.team h4 {
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.team  p {
+	font-size: 22px;
+	font-weight: bold;	
+}
+/*----------------PIC SECTION----------------------------------------------------------*/
+.pic-section {
+	box-shadow: 2px 2px 20px #313234;
+	margin-top: 120px;
+	padding: 0;
+	min-height: 400px;
+	overflow: hidden;
+	background-size: cover;
+	background-image: url("https://www.planwallpaper.com/static/images/6790904-free-background-wallpaper.jpg");
+}
+.pic-section-picture {
+	margin-top: 35px;
+	min-height: 365px;
+	background-image: url("http://www.pngmart.com/files/3/IPad-Tablet-PNG-File.png");
+	background-size: cover;
+}
+.pic-section-txt {
+	margin-top: 70px;	
+}
+.pic-section-txt h2 {
+	text-align: left;	
+	margin-left: 40px;
+	color: #fff;
+	font-size: 38px;
+	font-weight: bold;
+	text-shadow: 2px 1px 4px #313234;
+}
+.pic-section-txt p {
+	text-align: left;
+	overflow: auto;
+	margin-left: 40px;
+	color: #fff;
+	margin-bottom: 40px;
+	font-weight: 300;
+	text-shadow: 2px 1px 1px #313234;
+}
+.pic-section-txt div:nth-child(3) p {
+	padding-right: 20px;
+}
+/*----------------NUMBER SECTION---------------------*/
+.numbers-section {
+	margin: 0 auto;
+}
+.numbers-section h2 {
+	padding-top: 80px;
+	font-size: 66px;
+	line-height: 0;
+	text-shadow: 2px 1px 4px #313234;
+	letter-spacing: 9px;
+}
+.numbers-section .blue-txt {
+	padding-top: 0;
+	margin-top: 0;
+	font-size: 16px;
+	color: #00D2EF;
+	font-weight: bold;
+	position: relative;
+	bottom: 15px;	
+}
+.size {
+	font-size: 61px;
+	position: relative;
+	bottom: 4px;
+}
+/*<!--..................FOOTER ....................................... -->*/
+footer {
+	margin-top: 100px;
+	background-color: #313234;
+	height: auto;
+	box-shadow: 2px 2px 20px #313234;
+}
+footer h2 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+.footer-class h2:after {
+	content: "    ----------";
+	letter-spacing: -.1em;
+}
+footer p {
+	color: #fff;
+	text-align: left;
+}
+.footer-class  {
+	padding-top: 40px;
+	text-align: left;
+}
+.footer-class:nth-child(1) p {
+	padding-right: 40px;
+	text-align: justify;
+}
+.footer-class i {
+	font-size: 38px;
+	display: inline-block;
+	color:  #01CBE3;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+.footer-class i:nth-child(6) {
+	padding-right: 0;	
+}
+.footer-class i:hover {
+	transform: scale(1.40);
+	opacity: 0.8;
+}
+.copyrights {
+	margin-top: 40px;
+	background-color: #252726;
+}
+.copyrights p {
+	text-align: center;
+	padding: 8px;
+}
+/*12 column GRID*/
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+/*Column offset*/
+.col-offset-1 {margin-left: 8.33%}
+.col-offset-2 {margin-left: 16.66%}
+.col-offset-3 {margin-left: 25%}
+.col-offset-4 {margin-left: 33.33%}
+.col-offset-5 {margin-left: 41.66%}
+.col-offset-6 {margin-left: 50%}
+.col-offset-7 {margin-left: 58.33%}
+.col-offset-8 {margin-left: 66.66%}
+.col-offset-9 {margin-left: 75%}
+.col-offset-10 {margin-left: 83.33%}
+.col-offset-11 {margin-left: 91.66%}
+.col-offset-12 {margin-left: 100%}
+
+/*-----------------BLUE-------------------------*/
+@media(min-width: 992px) and (max-width: 1199px) {
+/*----------------------HEADER------------------------*/
+	header nav img {
+		width: 250px;
+		height: 60px;		
+	}
+	header {
+		background-color: #2980b9;
+		width: 100%;
+		min-height: 50px;
+	}
+	header>nav>ul>li>a {
+		line-height: 50px;
+		padding: 1vh 1vw; 
+	}
+	header>nav>img {
+		margin: 0 10vw;
+	}
+	.footer-class:first-child {
+		padding-left:20px;
+	}
+	.footer-class:nth-child(3) p {
+		padding-right: 20px;	
+	}
+	.col-m-4 {width: 33.33%;}
+	.col-m-8 {width: 66.66%;}
+}
+/*-----------------ORANGE-------------------------*/
+@media(min-width: 768px) and (max-width: 991px) { 
+	/*------------------------HEADER------------------------*/
+	.logo-s {
+		width: 500px;
+		height: 100px;
+	}
+	header {
+		background-color: #e67e22;
+	}
+	header>nav>ul {
+		float: none;	
+	}
+	header>nav>ul>li>a {
+		line-height: 50px;
+		padding: 1vh 3vw; 
+		border: 1px solid white;
+		border-radius: 10%;
+	}
+	header>nav>ul {
+		float: none;	
+		display: block;
+		text-align: center;
+	}
+	header>nav>img {
+		display: block;
+		margin: 0 auto;
+	}
+	.gallery .layer {
+		background-color: rgba(0, 0, 0, 0);
+		min-height: 140px;
+		opacity: 1;
+	}
+	.footer-class:first-child {
+		padding-left:20px;
+	}
+	/*...................TEAM..SECTION..................*/
+	.team {
+	    box-shadow: 2px 2px 20px #313234;
+	    margin-top: 5vh;
+	}	
+	.team  p {
+		font-size: 16px;
+	}
+	.team .media-position1:before,.media-position2:before,.media-position3:before,.media-position4:before {
+		font-size: 16px;
+		color: #34495e;
+		font-weight: bold;
+		text-shadow: 1px 0 0 #313234;
+		letter-spacing: 2px;
+	}
+	.team .media-position1:before {
+		content: "BOSS: ";
+	}
+	.team .media-position2:before {
+		content: "BOSS2: ";
+	}
+	.team .media-position3:before {
+		content: "BOSS3: ";
+	}
+	.team .media-position4:before {
+		content: "Secretary: ";
+	}
+	/*--------PIC SECTION------------------------*/
+	.pic-section {
+		margin-top: 5vh;
+		height: auto;
+	}
+	.pic-section-picture {
+		margin: 2vh 2vw;
+		height: 900px;
+		width: auto;
+		padding: 2vh 2vw;
+		background-repeat: no-repeat;
+	}
+	.pic-section-txt h2 {
+		text-align: center;
+		margin: 1vh 1vw;
+		padding: 0 2vw;
+	}
+	.pic-section-txt p {
+		text-align: center;
+		margin: 1vh 1vw;
+		padding: 2vh 2vw;
+	}
+	/*-------------FOOTER-----------------*/
+	.footer-class:nth-child(3) h2:before {
+		content: "----------    ";
+		letter-spacing: -.1em;
+	}
+	.footer-class:nth-child(3) h2, .footer-class:nth-child(3) p {
+		text-align: center;
+	}
+	.footer-class:nth-child(3) i {
+		font-size: 100px;
+		padding: 5px;
+	}
+	.col-offset-s-0 {margin-left: 0;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-12 {width: 100%;}
+}
+/*-----------------GREEN-------------------------*/
+@media(max-width: 767px) { 
+	/*-----------------------HEADER------------------------*/
+	.logo-xs {
+		width: 300px;
+		height: 60px;
+	}
+	header {
+		background-color: #2ecc71;
+	}
+	header>nav>ul {
+		float: none;	
+	}
+	header>nav>ul>li>a {
+		line-height: 50px;
+		padding: 1vh 15vw; /*JAK ZROBIC ROWNe PRZYCISKI??*/
+		border: 1px solid white;
+		border-radius: 25px;
+	}
+	header>nav>ul>li>a:hover {
+		border-color: #00D2EF;
+	}	
+	header>nav>ul>li {
+		display: block;
+		text-align: center;
+	}
+	header>nav>img {
+		display: block;
+		margin: 0 auto;
+	}
+	/*-----HERO--SECTION------------------------------*/
+	.slogan>h2 {
+		padding: 0;
+		float: none;
+		text-align: center;
+		margin: 0;
+		position: relative;
+		top: 20vh;
+	}
+	/*-----PROS--ICON--SECTION------------------*/
+	.pros {
+		padding-top: 5vh;
+		float: none;
+		box-shadow: 2px 2px 20px #313234;
+	}
+	.pros div>p {
+		position: relative;
+		bottom: 2vh;
+		margin: 0 5vw;
+	}
+	/*-------GALLERY---------------------------------*/	
+	.gallery {
+		margin-top: 5vh;
+	}
+	.gallery .layer {
+		background-color: rgba(0, 0, 0, 0);
+		min-height: 180px;
+		opacity: 1;
+	}
+	.gallery .layer i {
+		font-size: 32px;
+	}
+	/*...................TEAM..SECTION..................*/
+	.team {
+	    box-shadow: 2px 2px 20px #313234;
+	    margin-top: 5vh;
+	}	
+	.team  p {
+		font-size: 16px;
+
+	}
+	.team .media-position1:before,.media-position2:before,.media-position3:before,.media-position4:before {
+		font-size: 16px;
+		color: #34495e;
+		font-weight: bold;
+		text-shadow: 1px 0 0 #313234;
+		letter-spacing: 2px;
+	}
+	.team .media-position1:before {
+		content: "BOSS: ";
+	}
+	.team .media-position2:before {
+		content: "BOSS2: ";
+	}
+	.team .media-position3:before {
+		content: "BOSS3: ";
+	}
+	.team .media-position4:before {
+		content: "Secretary: ";
+	}
+	/*--------PIC SECTION------------------------*/
+	.pic-section {
+		margin-top: 5vh;
+		height: auto;
+	}
+	.pic-section-picture {
+		margin: 0;
+		min-height: 375px;
+		width: auto;
+		padding: 0;
+		vertical-align: middle;
+	}
+	.pic-section-txt h2 {
+		text-align: center;
+		margin: 1vh 1vw;
+		padding: 0 2vw;
+	}
+	.pic-section-txt p {
+		text-align: center;
+		margin: 1vh 1vw;
+		padding: 2vh 2vw;
+	}
+	/* ................NUMBERS SECTION................................... */
+	.numbers-section {
+		float: none;
+		display: block;
+	}
+	.numbers-section h2 {
+		padding: 2vh;
+	}
+	.numbers-section .blue-txt {
+		bottom: 4vh;
+	}
+	/*<!--..................FOOTER ....................................... -->*/
+	footer {
+		margin-top: 5vh;
+	}
+	.footer-class h2:before {
+		content: "----------    ";
+		letter-spacing: -.1em;
+	}
+	footer h2 {
+		text-align: center;
+	}
+	footer .footer-class .col-5 > p {
+		text-align: right;
+	}footer .footer-class .col-7 > p {
+		text-align: left;
+	}
+	.footer-class p{
+		text-align: center;
+		padding: 2vh 2vw;
+	}
+	.footer-class i {
+		font-size: 100px;
+		padding: 0;
+	}
+	.footer-class {
+		padding: 0;
+	}
+	.footer-class:nth-child(1) p {
+		padding-left: 40px;
+	}
+	.col-offset-s-0 {margin-left: 0}
+	.col-xs-4 {width: 33.33%;}
+	.col-xs-8 {width: 66.66%;}
+	.col-xs-12 {width: 100%;}
+}
