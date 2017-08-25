@@ -1,7 +1,6 @@
 module.exports = function(grunt) {
-
-  // Project configuration.
   grunt.initConfig({
+  // Project configuration.
     sass: {
       options: {
         sourceMap: true
@@ -12,7 +11,34 @@ module.exports = function(grunt) {
         }
       }
     },
+    
+    watch: {
+      scripts: {
+          files: ['*.html', 'scss/**/*.scss','js/**/*.js'],
+          tasks: ['sass'],
+          options: {
+              spawn: false,
+          },
+      }
+    },
 
+    browserSync: {
+      default_options: {
+        bsFiles: {
+          src: [
+            "css/*.css",
+            "sass/*sass",
+            "html/*.html"
+          ]
+        },
+        options: {
+            watchTask: true, 
+            server: {
+              baseDir: "./",
+            }
+        }
+      }
+    },
     imagemin: {
       dynamic: {
         files: [{
@@ -24,31 +50,15 @@ module.exports = function(grunt) {
       }
     },
   
-      
-    watch: {
-      scripts: {
-          files: ['sass/*.sass'],
-          tasks: ['sass'],
-          options: {
-              spawn: false,
-          }
-      }
-    },
-  
-   browserSync: {
-     files: ["css/style.css", "*.html", "js/*.js"]
-   },
- 
   });
 
   // Load the plugins tasks
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  
+  grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'imagemin', 'browser-sync', 'watch']);
-
+  grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
+  //wylaczylem 'imagemin' bo kompresuje zdjecia przy kazdej komendzie GRUNT
 };
