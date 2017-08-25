@@ -1,15 +1,6 @@
 module.exports = function(grunt) {
   grunt.initConfig({
   // Project configuration.
-    watch: {
-      scripts: {
-        files: ['html/*.html', 'scss/*.scss','js/*.js'],
-        tasks: ['sass', 'cssmin', 'browserSync'],
-        options: {
-            spawn: false,
-        },
-      }
-    },
 
     sass: {
       options: {
@@ -55,8 +46,6 @@ module.exports = function(grunt) {
       }
     },
 
-
-   
     browserSync: {
       default_options: {
         bsFiles: {
@@ -93,6 +82,16 @@ module.exports = function(grunt) {
         }]
       }
     },
+
+    watch: {
+      scripts: {
+        files: ['html/*.html', 'scss/*.scss', 'js/*.js'],
+        tasks: ['sass'],
+        options: {
+            spawn: false,
+        },
+      }
+    },
   
   });
 
@@ -106,5 +105,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
-  grunt.registerTask('default', ['imagemin', 'uncss', 'uglify', 'watch']);
+  grunt.registerTask('default', ['cssmin', 'sass', 'uglify', 'browserSync', 'watch']);
 };
